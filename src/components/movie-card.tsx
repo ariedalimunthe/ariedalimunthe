@@ -31,7 +31,6 @@ export function MovieCard({ movie }: MovieCardProps) {
          <MagicCard className="overflow-hidden border hover:shadow-lg transition-all duration-300">
           <div  className="relative group">
             <Image
-              
               src={movie.thumbnail}
               alt={movie.title}
               width={500}
