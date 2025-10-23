@@ -34,17 +34,12 @@ export default function MoviesPage() {
             </div>
           </div>
         </BlurFade>
-        
-        <div className="grid gap-6 sm:grid-cols-2">
-          
+
+        <div className="grid gap-6 sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-2 xl:grid-cols-2">
+
           {DATA.movies.map((video, idx) => (
             <BlurFade key={video.url} delay={BLUR_FADE_DELAY * (idx + 2)}>
-               <BorderBeam
-                          duration={4}
-                          size={300}
-                          reverse
-                          className="from-transparent via-purple-500 to-transparent"
-                        />
+             
               <MovieCard movie={video} />
             </BlurFade>
           ))}

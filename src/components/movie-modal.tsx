@@ -10,7 +10,7 @@ import {
 interface MovieModalProps {
   isOpen: boolean;
   onClose: () => void;
-  videoUrl: string;
+  movie: string;
   videoTitle?: string;
 }
 
@@ -21,12 +21,12 @@ function getYouTubeEmbedUrl(url: string) {
   return videoId ? `https://www.youtube.com/embed/${videoId}` : '';
 }
 
-export function MovieModal({ isOpen, onClose, videoUrl, videoTitle }: MovieModalProps) {
-  const embedUrl = getYouTubeEmbedUrl(videoUrl);
+export function MovieModal({ isOpen, onClose, movie, videoTitle }: MovieModalProps) {
+  const embedUrl = getYouTubeEmbedUrl(movie);
 
   return (
     <Dialog open={isOpen} onOpenChange={onClose}>
-      <DialogContent className="max-w-[90vw] md:max-w-[80vw] lg:max-w-[1200px] p-2 md:p-4 h-auto">
+      <DialogContent className="max-w-[60vw] md:max-w-[50vw] lg:max-w-[800px] p-2 md:p-4 h-auto">
         <DialogHeader className="mb-2">
           <DialogTitle className="text-base md:text-lg line-clamp-1">
             {videoTitle || "Watch Video"}
@@ -35,7 +35,7 @@ export function MovieModal({ isOpen, onClose, videoUrl, videoTitle }: MovieModal
         <div className="relative w-full aspect-video">
           <iframe
             src={embedUrl}
-            title={videoUrl}
+            title={movie}
             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
             allowFullScreen
             className="w-full h-full rounded-lg"

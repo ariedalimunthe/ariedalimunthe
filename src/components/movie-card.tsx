@@ -7,6 +7,7 @@ import Image from "next/image";
 import { PlayIcon } from "lucide-react";
 import { useState } from "react";
 import { MovieModal } from "./movie-modal";
+import { MagicCard } from "./magicui/magic-card";
 
 interface MovieCardProps {
   movie: {
@@ -26,18 +27,22 @@ export function MovieCard({ movie }: MovieCardProps) {
   const shortDescription = movie.description.slice(0, 70) + "...";
   return (
     <>
-      <div className="cursor-pointer">
-        <Card className="overflow-hidden border hover:shadow-lg transition-all duration-300">
-          <div className="relative group">
+      <div onClick={() => setIsModalOpen(true)}>
+         <MagicCard className="overflow-hidden border hover:shadow-lg transition-all duration-300">
+          <div  className="relative group">
             <Image
+              
               src={movie.thumbnail}
               alt={movie.title}
               width={500}
               height={280}
-              className="w-full  object-cover"
+              className=" object-cover cursor-pointer"
               priority
             />
            
+           <div className="absolute inset-0 bg-black/50 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+              <PlayIcon className="w-12 h-12 text-white" />
+            </div>
           </div>
           <CardHeader className="p-4">
             <CardTitle className="text-lg">{movie.title}</CardTitle>
@@ -94,13 +99,13 @@ export function MovieCard({ movie }: MovieCardProps) {
     </button>
   )}
           </CardContent>
-        </Card>
+        </MagicCard>
       </div>
         
       <MovieModal
         isOpen={isModalOpen}
         onClose={() => setIsModalOpen(false)}
-        videoUrl={movie.url}
+        movie={movie.url}
         videoTitle={movie.title}
       />
     </>
