@@ -26,7 +26,7 @@ export function MovieModal({ isOpen, onClose, movie, videoTitle }: MovieModalPro
 
   return (
     <Dialog open={isOpen} onOpenChange={onClose}>
-      <DialogContent className="max-w-[60vw] md:max-w-[50vw] lg:max-w-[800px] p-2 md:p-4 h-auto">
+      <DialogContent className="max-w-[90vw] md:max-w-[80vw] lg:max-w-[1200px] p-2 md:p-4 h-auto">
         <DialogHeader className="mb-2">
           <DialogTitle className="text-base md:text-lg line-clamp-1">
             {videoTitle || "Watch Video"}

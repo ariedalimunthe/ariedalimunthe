@@ -11,8 +11,8 @@ export const DATA = {
   location: "Padangsidimpuan, Indonesia",
   locationLink: "https://www.google.com/maps/place/padangsidimpuan",
   description:
-    "A Full Stack Developer from Indonesia, Code is an art 🎨 be the artist!",
-  summary: "Hello! I'm a developer from Padangsidimpuan, Indonesia. I enjoy programming and exploring technology. Currently doing **freelancing** and working on my own projects. Open to work, freelance, or **collaborate**.\n\n Great analysis and multitasking skills. Constantly interested in problem solving, reviewing colleagues code and refactoring and optimising existing code. Always ready to learn new technology, update existing knowledge or work harder. Proud member of open-source community.",
+    "A Full Stack Developer, a man who turn a cup of 🍵 coffee into beautiful code!",
+  summary: "Hello! I'm a developer from Padangsidimpuan, Indonesia. I enjoy programming and exploring technology. Currently working on my own projects. Open to work, freelance, or **collaborate**.\n\n Great analysis and multitasking skills. Constantly interested in problem solving, reviewing colleagues code and refactoring and optimising existing code. Always ready to learn new **technology**, update existing knowledge or work harder. Proud member of Open-Source Community.",
 
   avatarUrl: "/hi.png",
   skills: [
