@@ -1,0 +1,26 @@
+@import url('https://fonts.googleapis.com/css2?family=Parisienne&display=swap');
+  .font-signature {
+      font-family: 'Parisienne', cursive;
+    }
+
+    .typing-fade {
+    display: inline-block;
+    overflow: hidden;           /* hides overflowing text until typed */
+    white-space: nowrap;        /* keeps text on one line */
+    
+    animation: typing 3s linear forwards, blink 0.7s step-end infinite;
+  }
+
+  /* Typing effect */
+  @keyframes typing {
+    from { width: 0 }
+    to { width: 100% }
+  }
+
+  /* Cursor blinking */
+  @keyframes blink {
+    50% { border-color: transparent }
+  }
+
+  /* Subtle fade-in */
+ 

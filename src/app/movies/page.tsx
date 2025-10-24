@@ -2,7 +2,6 @@ import BlurFade from "@/components/magicui/blur-fade";
 import dynamic from "next/dynamic";
 import { DATA } from "@/data/resume";
 import { MovieSkeleton } from "@/components/skeletons/movie-skeleton";
-import { BorderBeam } from "@/components/magicui/border-beam";
 
 export const metadata = {
   title: "Movies",

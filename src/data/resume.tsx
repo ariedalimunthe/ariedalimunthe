@@ -231,7 +231,7 @@ export const DATA = {
     {
       school: "University of Logistics and International Business (ULBI)",
       href: "https://ulbi.ac.id/",
-      degree: "B, Graduate Degree : A.md Kom, Informatics Engineering is an engineering discipline that combines Information Technology (IT) with engineering concepts",
+      degree: "B, Graduate Degree :Informatics Engineering is an engineering discipline that combines Information Technology (IT) with engineering concepts",
       logoUrl: "/ulbi.png",
       start: "2014",
       end: "2017",

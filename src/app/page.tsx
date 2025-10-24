@@ -22,7 +22,9 @@ import { HackathonSkeleton } from "@/components/skeletons/hackathon-skeleton";
 import { BorderBeam } from "@/components/magicui/border-beam";
 import { GhibliSkyBackground } from "@/components/ghibli-elements";
 import SpotifyEmbed from '@/components/spotify-play';
-
+import  VisitorCounter  from "@/components/visitor-counter";
+import ContactSection from '@/components/contact';  
+import "./configtext.css";
 
 const BLUR_FADE_DELAY = 0.04;
 export const metadata: Metadata = {
@@ -103,7 +105,7 @@ export default function Page() {
             <h2 className="text-xl font-bold">About</h2>
           </BlurFade>
           <BlurFade delay={BLUR_FADE_DELAY * 4}>
-        <div className="prose max-w-full text-pretty font-sans text-sm text-muted-foreground dark:prose-invert">
+        <div className="prose max-w-full text-pretty font-sans text-sm dark:prose-invert">
             <Markdown>{DATA.summary}</Markdown>
         </div>
            
@@ -144,8 +146,6 @@ export default function Page() {
           </div>
         </section>
 
-        
-
         <section id="education">
           <div className="flex min-h-0 flex-col gap-y-3">
             <BlurFade delay={BLUR_FADE_DELAY * 7}>
@@ -164,6 +164,7 @@ export default function Page() {
                   title={education.school}
                   subtitle={education.degree}
                   period={`${education.start} - ${education.end}`}
+                 
                 />
                 
               </BlurFade>
@@ -180,28 +181,8 @@ export default function Page() {
            <SpotifyEmbed playlistId="5yJx9xGKLxOGHVdmrhyNDX?utm_source=generator&theme=0"/>
            </BlurFade>
          </section>
-          
-        <section id="contact">
-          <BlurFade delay={BLUR_FADE_DELAY * 16}>
-            <div className="space-y-4">
-              <h2 className="text-xl font-bold">Contact</h2>
-              
-              <p className="text-muted-foreground">
-                Always open to discussing new projects, creative ideas, or opportunities to be part of your visions. Feel free to reach out!
-              </p>
-              
-              <div className="mt-6 space-y-4">
-                <a
-                  href="mailto:aridalimunthe11@gmail.com"
-                  className="flex items-center gap-2 underline underline-offset-4 hover:opacity-70 transition-opacity"
-                >
-                  <Icons.email className="size-4" />
-                  aridalimunthe11@gmail.com
-                </a>
-              </div>
-            </div>
-          </BlurFade>
-        </section>
+         <ContactSection />
+      
         <footer className="mt-10 border-t py-8">
           <BlurFade delay={BLUR_FADE_DELAY * 15}>
             <div className="container mx-auto">
