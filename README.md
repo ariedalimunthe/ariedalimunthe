@@ -122,8 +122,4 @@ Great analysis and multitasking skills. Constantly interested in problem solving
 
 ⭐️ **Thanks for visiting!** ⭐️
 
-*"Hello! I'm a developer from Padangsidimpuan, Indonesia. I enjoy programming and exploring technology. Currently doing freelancing and working on my own projects. Open to work, freelance, or collaborate.
-
-Great analysis and multitasking skills. Constantly interested in problem solving, reviewing colleagues code and refactoring and optimising existing code. Always ready to learn new technology, update existing knowledge or work harder. Proud member of open-source community."*
-
 </div>
